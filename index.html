@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com, adapted for NEU'MOR -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NEU'MOR — Indonesian Women's Fashion</title>
+	<meta name="description" content="NEU'MOR is a family-run Indonesian women's fashion brand crafting tops and bottoms with care.">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<script>
+		var visitorName = window.prompt("Hello, please input your name:");
+		if (visitorName && visitorName.trim() !== "") {
+			window.alert("Welcome to NEU'MOR, " + visitorName.trim() + "! Where heritage meets modernity.");
+		} else {
+			window.alert("Welcome to NEU'MOR! Where heritage meets modernity.");
+		}
+	</script>
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo">NEU'MOR</a>
+			<ul>
+				<li class="current">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="product.html">Collections</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Welcoming message, shown by JS on page load (index page only) -->
+	<div id="welcome-banner">
+		<p>★ Welcome to NEU'MOR! Where heritage meets modernity. ★ <button id="banner-close" aria-label="Close">&times;</button></p>
+	</div>
+
+	<div id="body">
+		<div id="featured">
+			<div class="first">
+				<div>
+					<h1>Indonesian Women&#8217;s Fashion, Made by Family</h1>
+					<p>
+						NEU'MOR is a family-run label crafting tops and bottoms for the modern Indonesian woman — cut, sewn, and finished with care.
+					</p>
+					<a href="product.html" id="shopnow">Shop Collections</a>
+
+					<!-- Custom JS function: personalized greeting, takes the visitor's name as input -->
+					<div class="hero-greeting">
+						<p class="hint">Tell us your name and we'll say hello:</p>
+						<form id="greeting-form" onsubmit="return showGreeting(event)">
+							<input type="text" id="name-input" placeholder="Your name...">
+							<button type="submit">Welcome Me</button>
+						</form>
+						<div id="greeting-result"></div>
+					</div>
+				</div>
+			</div>
+			<div class="last">
+				<img src="https://neumor.com/wp-content/uploads/2026/05/A850-PINK-1-510x765.jpg" alt="Top Embroidered A850 Pink">
+			</div>
+		</div>
+
+		<div id="content">
+			<div id="home">
+
+				<ul class="info-strips">
+					<li>
+						<h2>Free Shipping</h2>
+						<p>Gratis pengiriman untuk seluruh Pulau Jawa</p>
+					</li>
+					<li>
+						<h2>Customer Care</h2>
+						<p>Hubungi kami kapan saja</p>
+					</li>
+					<li>
+						<h2>Uniforms</h2>
+						<p>Kami menerima pesanan seragam kantoran</p>
+					</li>
+				</ul>
+
+				<h4>Featured</h4>
+				<h1 class="section-heading">This Season's Pieces</h1>
+				<ul class="product-list" style="margin-top:24px;">
+					<li>
+						<img src="https://neumor.com/wp-content/uploads/2026/05/A850-PINK-1-510x765.jpg" alt="Top Embroidered A850 Pink">
+						<div>
+							<span>Tops</span>
+							<h2>Top Embroidered — A850 Pink</h2>
+						</div>
+					</li>
+					<li>
+						<img src="https://neumor.com/wp-content/uploads/2026/05/A840-CREAM-2-510x765.jpg" alt="Pinstripe Crop Shirt A840 Cream">
+						<div>
+							<span>Tops</span>
+							<h2>Pinstripe Crop Shirt — A840 Cream</h2>
+						</div>
+					</li>
+					<li>
+						<img src="https://neumor.com/wp-content/uploads/2026/02/N313-DBROWN-3-510x765.jpg" alt="Balloon Hem Midi Skirt N313 Dark Brown">
+						<div>
+							<span>Bottoms</span>
+							<h2>Balloon Hem Midi Skirt — N313 Dark Brown</h2>
+						</div>
+					</li>
+					<li>
+						<img src="https://neumor.com/wp-content/uploads/2025/10/N313-WHITE-10-510x765.jpg" alt="Balloon Hem Midi Skirt N313 White">
+						<div>
+							<span>Bottoms</span>
+							<h2>Balloon Hem Midi Skirt — N313 White</h2>
+						</div>
+					</li>
+				</ul>
+				<p class="text-center">
+					<a href="product.html" class="btn-outline">View All Collections</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="cols">
+			<div class="brand">
+				<h4>NEU'MOR</h4>
+				<p>Indonesian women's fashion. A family business making tops, bottoms, and uniforms with love.</p>
+			</div>
+			<div>
+				<h4>Navigation</h4>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="product.html">Collections</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Customer Care</h4>
+				<p>Jakarta, Indonesia</p>
+				<p>hello@neumor.com</p>
+				<p>+62 000-0000-0000</p>
+				<div class="social">
+					<a href="https://www.instagram.com/neumor_official/" target="_blank">IG</a>
+					<a href="https://www.facebook.com/Neumorofficial" target="_blank">FB</a>
+				</div>
+			</div>
+		</div>
+		<p class="footnote">
+			&copy; 2026 NEU'MOR. All rights reserved.
+		</p>
+		<p class="footnote credit">
+			Student ID: 25229038 &nbsp;|&nbsp; Name: Matthew Obed Susanto &nbsp;|&nbsp; Original Template: <a href="https://freewebsitetemplates.com/preview/tailorshopwebsitetemplate/index.html" target="_blank">Tailor Shop Website Template</a> (freewebsitetemplates.com)
+		</p>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
